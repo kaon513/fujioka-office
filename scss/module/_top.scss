@@ -1,0 +1,29 @@
+.top{
+position: relative;
+  &-slider {
+    overflow: hidden;
+    // position: absolute;
+    // top: 0px;
+    max-width: 100%;
+    width: 100%;
+    // @include max-screen($break_sp) {
+    //   top:200px;
+    // }
+
+    // &_sp {
+    //   display: none;
+    //   position: absolute;
+    //     max-width: 100%;
+    //   @include max-screen($break_sp) {
+    //     display: block;
+    //     bottom: 100px;
+    //   }
+    // }
+  }
+
+  &-header{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+  }
+}

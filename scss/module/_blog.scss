@@ -1,0 +1,29 @@
+.blog {
+  margin-top: 9%;
+  @include min-screen($break_pc){
+      margin-top: 115.5px;
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &-item {
+    width: 30%;
+    position: relative;
+    padding-bottom: 40px;
+  }
+
+  &-cap {
+    text-align: center;
+    width: fit-content;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #707070;
+    font-size: 10px;
+  }
+}

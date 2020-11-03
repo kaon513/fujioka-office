@@ -1,0 +1,41 @@
+.service {
+  margin-top: 8.5%;
+
+  @include min-screen($break_pc){
+      margin-top: 109px;
+  }
+
+  &-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+  }
+&-item{
+  width: 30%;
+}
+
+  &-cap {
+    display: flex;
+    border: 3px solid #2C334B;
+    width: 80%;
+    margin: -30px auto 0;
+    background-color: #fff;
+    position: relative;
+
+    &-number {
+      // content: "#01";
+      color: #fff;
+      background-color: #2C334B;
+      // display: inline-block;
+      padding: 0 8px;
+      // position: absolute;
+      // left: 0;
+    }
+
+    &-ttl{
+      // display: inline-block;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+}

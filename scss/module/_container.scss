@@ -1,0 +1,8 @@
+.container{
+  max-width: 1280px;
+  padding: 0 7%;
+  margin: 0 auto;
+  @include min-screen($break_pc){
+      padding: 0 90px;
+  }
+}

@@ -1,0 +1,18 @@
+.gnav {
+  margin-left: auto;
+
+  &-list {
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  &-item {
+    flex-shrink: 0;
+    // padding: 0 22.5px;
+    padding: 0 4%;
+    @include min-screen($break_pc) {
+      padding: 0 22.5px;
+    }
+  }
+}
