@@ -146,3 +146,27 @@
   }
 
 }
+
+@mixin hedaer_ttl{
+  // font-family: $sub_font;
+  font-family: $main_font;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.35;
+  letter-spacing: 0.126em;
+  color: $txt_color;
+  // color: $main_color;
+  //text-align: left;
+  margin-bottom: 48px;
+
+  @include max-screen($break_sp) {
+    font-size: 24px;
+    line-height: 1.33;
+    color: $txt_color;
+    // color: $main_color;
+    //text-align: left;
+    margin-bottom: 9.4%;
+    text-align: center;
+  }
+
+}

@@ -1,15 +1,32 @@
 .footer {
   text-align: center;
-  padding-top: 158px;
-  // padding-top: 12%;
+  padding-top: 12%;
+
+  @include min-screen($break_pc){
+    padding-top: 158px;
+}
 
   &-txt {
+    font-family: $sub_font;
+    // font-family: $main_font;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.126em;
+    line-height: 1.5;
+    color: #252525;
+    // color: $main_color;
+    //text-align: left;
+
     margin-bottom: 23px;
+
+    span{
+      display: inline-block;
+    }
   }
 
   &-bottom {
     height: 165px;
-    background-color: #202037;
+    background-color:  $accent_color;
     margin-top: 101px;
     // margin-top: 8%;
   }

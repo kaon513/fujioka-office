@@ -1,6 +1,20 @@
 .header{
+  @include max-screen($break_sp) {
+    padding-top: 17.3%;
+  }
+
   &-inner{
     display: flex;
     padding: 47px 0;
+
+    @include max-screen($break_sp) {
+      display: none;
+    }
+  }
+
+  &-logo{
+    img{
+      vertical-align: middle;
+    }
   }
 }

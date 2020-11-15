@@ -1,0 +1,176 @@
+.tnav {
+  border-bottom: 1px solid #202037;
+  padding: 21px 0;
+  font-family: $sub_font;
+  // font-family: $main_font;
+  // font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.126em;
+  // line-height: 2;
+  color: #212138;
+  // color: $main_color;
+  //text-align: left;
+  &-list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &-item {
+    font-size: 24px;
+    line-height: 1.5;
+
+    @include max-screen($break_sp) {
+      font-size: 20px;
+    }
+
+    a {
+      color: #212138;
+      &::after {
+        content: "";
+        display: block;
+        background-image: url("../../img/arrow.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 21px;
+        height: 14px;
+        margin: 0 auto;
+        cursor: pointer;
+      }
+    }
+
+  }
+}
+
+.price {
+  counter-reset: number 0;
+  max-width: 1280px;
+  padding: 0 2.4%;
+  margin: 0 auto;
+  font-family: $sub_font;
+  // font-family: $main_font;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.126em;
+  line-height: 2;
+  color: #212138;
+  @include min-screen($break_pc) {
+    padding: 0 31px;
+  }
+
+  &-content {
+    // margin-top: 108px; 1218
+    margin-top: 8.8%;
+
+    &:last-child {
+      // margin-bottom: 278px;
+      margin-bottom: 20%;
+    }
+  }
+
+  &-ttl {
+    padding: 12px 0 12px 138px;
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 1.5;
+
+    &::before {
+      font-family: $main_font;
+      font-size: 24px;
+      line-height: 1.333;
+      counter-increment: number 1;
+      /* number カウンタの増加数をセット */
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      content: "#" counter(number,decimal-leading-zero);
+      /* 表示形式を指定 */
+      color: #fff;
+      background-color: #2C334B;
+      // display: inline-block;
+      // padding: 0 8px;
+      padding: 20px 15px;
+      // position: absolute;
+      // left: 0;
+      // font-family: $sub_font;
+      font-family: $main_font;
+      // font-size: 20px;
+      font-size: 100%;
+      font-weight: bold;
+      line-height: 1.35;
+      letter-spacing: 0.126em;
+      // color: $txt_color;
+      color: $main_color;
+      //text-align: left;
+      @include max-screen($break_sp) {
+        font-size: 20px;
+        // letter-spacing: 0.126em;
+        //text-align: left;
+        // color: $txt_color;
+      }
+      @include min-screen($break_pc) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &-dl {
+    dt {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
+
+  &-tbl {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+
+    .gyomu {
+      background-color: #F2F2F2;
+    }
+
+
+
+    thead {
+      td,
+      th {
+        border: none;
+      }
+    }
+
+    tbody {
+      border-top: 9px solid #202037;
+    }
+
+    tr {
+      height: 43px;
+      border-bottom: solid 1px #202037;
+    }
+
+    th {
+      // text-align: center;
+      padding: 7px 0;
+      border-right: solid 1px #202037;
+      border-left: solid 1px #202037;
+    }
+
+    td {
+      text-align: center;
+      padding: 7px 0;
+      border-right: solid 1px #202037;
+      border-left: solid 1px #202037;
+    }
+
+
+  }
+
+}
+
+.alternately {
+  tr:nth-child(even) td  {
+    background: #F2F2F2;
+  }
+}

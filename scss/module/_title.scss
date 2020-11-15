@@ -1,0 +1,39 @@
+.title {
+  &-ttl-wrapper {
+    background-color: $accent_color;
+    text-align: center;
+
+    padding-top: 8%;
+    padding-bottom: 8%;
+    // font-family: $sub_font;
+    font-family: $main_font;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    line-height: 1.33;
+    // color: $txt_color;
+    color: $main_color;
+    //text-align: left;
+
+    @include max-screen($break_sp) {
+      padding-top: 8%;
+      padding-bottom: 8%;
+      font-size: 24px;
+    }
+    @include min-screen($break_pc){
+      padding-top: 103px;
+      padding-bottom: 103px;
+  }
+}
+
+  &-pic {
+    @include max-screen($break_sp) {
+      display: none;
+    }
+    img {
+      max-width: 100%;
+      vertical-align: bottom;
+      max-height: 652.35px;
+    }
+  }
+}

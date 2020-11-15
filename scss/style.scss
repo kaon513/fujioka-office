@@ -1,3 +1,4 @@
+//compileNested: ../css/$1.min.css
 @import "./base/reset";
 @import "./base/variable";
 @import "./base/mixin";
@@ -7,6 +8,7 @@
 @import "./module/gnav";
 @import "./module/main";
 @import "./module/top";
+@import "./module/title";
 @import "./module/slider";
 @import "./module/point";
 @import "./module/service";

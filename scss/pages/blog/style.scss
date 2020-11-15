@@ -1,0 +1,10 @@
+//compileNested: ../../../css/blog/$1.min.css
+@import "../../style";
+@import "page";
+
+
+.blog {
+  @include max-screen($break_sp) {
+      margin-top: 10%;
+  }
+}

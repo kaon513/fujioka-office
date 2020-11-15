@@ -18,6 +18,11 @@ li {
   list-style: none;
 }
 
+figure img {
+	max-width: 100%;
+	vertical-align: bottom;
+}
+
 img {
   width: 100%;
 }
@@ -32,8 +37,21 @@ a {
   color: #FFFFFF;
   border-radius: 50px; // width: 298px;
   padding: 25px 105px;
-  font-size: 16px;
+  // font-size: 16px;
   line-height: 1;
+  font-family: $sub_font;
+  // font-family: $main_font;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.126em;
+  // line-height: 1.5;
+  // color: $txt_color;
+  color: $main_color;
+  //text-align: left;
+  @include max-screen($break_sp) {
+    width: 100%;
+    padding: 25px 0;
+  }
 
   &-wrapper {
     text-align: center;
@@ -43,16 +61,42 @@ a {
   &-large {
     display: inline-block;
     // background-color: #202037;
-      background: linear-gradient(0.25turn, #364D6A,#599DC0);
+    background: linear-gradient(0.25turn, #364D6A,#599DC0);
     color: #FFFFFF;
     border-radius: 50px; // width: 298px;
     padding: 32px 164px;
-    font-size: 32px;
+    // font-size: 32px;
     line-height: 1;
+    // font-family: $sub_font;
+    font-family: $main_font;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.126em;
+    // line-height: 1.375;
+    // color: $txt_color;
+    color: $main_color;
+    //text-align: left;
+    @include max-screen($break_sp) {
+      padding: 25px 0;
+      width: 100%;
+    }
 
     &-wrapper {
       text-align: center;
-      margin: 23px auto ;
+      margin: 23px auto;
+      @include max-screen($break_sp) {
+        padding: 0 7%;
+        margin: 0 auto;
+      }
     }
+  }
+}
+
+.line {
+  // margin: 121.1px;
+  margin: 10% 0;
+  color: #E2E2E2;
+  @include max-screen($break_sp) {
+    display: none;
   }
 }

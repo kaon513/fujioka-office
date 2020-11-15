@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>藤岡行政書士事務所 | service</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/service/style.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrIoACZ5NO7m47qyDQ5L6zM3Fsw6ZaYIc&callback=initMap"></script>
+  <script>
+    function initMap() {
+      var mapPosition = new google.maps.LatLng(35.7269899, 139.7105853); //緯度経度
+      var map = new google.maps.Map(document.getElementById('gmap'), {
+        zoom: 17, //ズーム
+        center: mapPosition
+      });
+      // var marker = new google.maps.Marker({
+      // position: mapPosition,
+      // map: map
+      // });
+
+      //地図上にマーカーを配置する
+      var marker = new google.maps.Marker({
+        icon: new google.maps.MarkerImage(
+          'img/map_icon.svg', //画像ファイルのパス
+          new google.maps.Size(170, 192), //アイコンの表示サイズ(縦,横)
+          new google.maps.Point(0, 0)
+        ),
+        position: mapPosition,
+        map: map
+      });
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body>
+
+  <!-- header -->
+  <header class="header">
+
+    <!-- container -->
+    <div class="container">
+
+      <div class="header-inner">
+        <figure class="header-logo">
+          <a href="index.html"><img src="img/typo.png" alt="typo"></a>
+        </figure>
+
+        <!-- gnav -->
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="#about">About</a></li>
+            <li class="gnav-item"><a href="#service">Service</a></li>
+            <li class="gnav-item"><a href="#price">Price</a></li>
+            <li class="gnav-item"><a href="#blog">Blog</a></li>
+            <li class="gnav-item"><a href="#contact">Contact</a></li>
+          </ul>
+
+        </nav><!-- /gnav -->
+      </div>
+
+    </div><!-- /container -->
+  </header><!-- /header -->
+
+  <!-- main -->
+  <main class="main">
+
+    <!-- title -->
+    <section class="title">
+      <div class="title-ttl-wrapper">
+        <h1 class="title-ttl">Service</h1>
+      </div>
+      <div class="title-pic">
+        <img src="img/service_ttl.png" alt="service_ttl">
+      </div>
+    </section><!-- /title -->
+
+    <!-- service -->
+    <section class="service" id="service">
+      <!-- container -->
+      <div class="container">
+        <!-- <h2 class="service-ttl">SERVICE</h2> -->
+        <ul class="service-card">
+          <li class="service-card-left">
+            <!-- <p class="service-card-number">#01</p> -->
+            <p class="service-card-ttl">IT法務</p>
+            <p class="service-card-txt">IT関連の契約書には紛争を予防するための「予防法務」としてとても大きな役割があり、サービスの内容をよく理解した上で作成をする必要があります。
+              また知的財産権の管理など一般的な契約書とは違った内容を盛り込むことも必要です。
+            <p class="service-card-txt">当事務所ではweb業界に8年間身を置き、webサイトの制作·会員管理システムの運用·新規webサービスの立ち上げに従事した経験を持つ行政書士が契約書のチェック·作成をお手伝いいたします。</p>
+            </p>
+          </li>
+          <li class="service-card-right">
+            <p class="service-card-right-ttl"><span>“</span>ご用意するサービス<span>”</span></p>
+            <ul class="service-card-right-list">
+              <li class="service-card-right-item">・IT法務顧問サービス（月5,000円～）</li>
+              <li class="service-card-right-item">・契約書リスク診断</li>
+              <li class="service-card-right-item">・契約書ドラフト作成</li>
+              <li class="service-card-right-item">・IT法務研修など</li>
+            </ul>
+            <div class="btn-wrapper">
+              <a href="price.html" class="btn">料金ページへ</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="service-card">
+          <li class="service-card-left">
+            <!-- <p class="service-card-number">#01</p> -->
+            <p class="service-card-ttl">ビザ申請業務</p>
+            <p class="service-card-txt">数多くの外国人IT技術者の在留資格申請業務に従事した経験を元に、
+当事務所では在留資格、永住申請・定住申請・帰化申請などの手続きを行ってまいります。<br>
+優秀な外国人IT技術者を受け入れ、業界のサービス向上の一助ができるようサポートいたします。
+            </p>
+          </li>
+          <li class="service-card-right">
+            <p class="service-card-right-ttl"><span>“</span>ご用意するサービス<span>”</span></p>
+            <ul class="service-card-right-list">
+              <li class="service-card-right-item">・ビザ取得・更新</li>
+              <li class="service-card-right-item">・永住許可</li>
+              <li class="service-card-right-item">・帰化申請</li>
+              <li class="service-card-right-item">・国籍取得など</li>
+            </ul>
+            <div class="btn-wrapper">
+              <a href="price.html" class="btn">料金ページへ</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="service-card">
+          <li class="service-card-left">
+            <!-- <p class="service-card-number">#01</p> -->
+            <p class="service-card-ttl">民泊申請</p>
+            <p class="service-card-txt">住宅宿泊事業法（いわゆる民泊新法）が2018年6月15日に施行されます。
+年々増加する訪日外国人旅行者の宿泊の受け皿として、今後民泊は全国で解禁され、各地で営業が行われます。 <br>
+2020年の東京オリンピック開催に向けてますます広がっていく民泊。
+当事務所では最新のwebサービスでもある民泊の普及に注力します。<br>
+民泊登録の申請（住宅宿泊事業届等）をサポートし、民泊仲介サイトへの登録や情報提供などでお手伝いをいたします。</p>
+          </li>
+          <li class="service-card-right">
+            <p class="service-card-right-ttl">色々なご提案ができます。 <br>
+直接当社までお問い合わせください</p>
+            <div class="btn-wrapper">
+              <a href="contact.html" class="btn">お問い合わせ</a>
+            </div>
+          </li>
+        </ul>
+        <!-- <div class="btn-wrapper">
+          <a href="service.html" class="btn">詳しく見る</a>
+        </div> -->
+      </div><!-- /container -->
+    </section><!-- /service -->
+
+  </main><!-- /main -->
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-txt">まずはメールで<span>お気軽にお問い合わせください</span> </p>
+      <div class="btn-large-wrapper">
+        <a href="contact.html" class="btn-large">CONTACT</a>
+      </div>
+      <div class="footer-bottom">
+
+      </div>
+    </div>
+  </footer><!-- /footer -->
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

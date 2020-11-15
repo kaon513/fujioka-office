@@ -1,0 +1,210 @@
+.service {
+  border: 15px solid #F2F2F2;
+  counter-reset: number 0;
+  margin: 0 auto;
+
+  @include max-screen($break_sp) {
+    border: 3px solid #F2F2F2;
+  }
+
+  &-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // margin-top: 116px;
+    margin-top: 10.5%;
+
+    &:last-child {
+      // margin-bottom:  116px;
+      margin-bottom: 10.5%;
+    }
+
+    &-left {
+      width: (533/1110) * 100%;
+      @include max-screen($break_sp) {
+        width: 100%;
+      }
+    }
+
+    &-right {
+      width: (477/1110) * 100%;
+      background-color: #FAFAFA;
+      // padding-left: 71px;
+      // padding-right: 71px;
+      padding-top: 62px;
+      margin: 0 auto;
+      @include max-screen($break_sp) {
+        width: 100%;
+        padding-top: 13%;
+      }
+
+      &-ttl {
+        font-family: $sub_font;
+        // font-family: $main_font;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.207em;
+        line-height: 1.5;
+        color: #202037;
+        // color: $main_color;
+        //text-align: left;
+        text-align: center;
+        vertical-align: middle;
+        position: relative;
+        margin-bottom: 55px;
+
+        %quoto {
+          // font-family: $sub_font;s
+          // font-family: $main_font;
+          font-size: 64px;
+          // font-weight: bold;
+          // letter-spacing: 0.207em;
+          // line-height: 96/64;
+          line-height: 1;
+          color: rgba(#202037,.21);
+          color: $main_color;
+          //text-align: left;
+        }
+
+        span {
+          // font-family: $sub_font;
+          // font-family: $main_font;
+          font-size: 64px;
+          // font-weight: bold;
+          // letter-spacing: 0.207em;
+          // line-height: 96/64;
+          color: rgba(#202037,.21);
+          color: $main_color;
+          //text-align: left;
+          // content: "“";
+          // position: absolute;
+          // top:15px;
+          // left: -15px;
+          line-height: 1;
+          position: absolute;
+
+          @include max-screen($break_sp) {
+              font-size: 32px;
+          }
+
+          &:nth-child(1) {
+            left: 10%;
+            @include max-screen($break_sp) {
+              left: 5%;
+            }
+          }
+
+          &:nth-child(2) {
+            right: 10%;
+            @include max-screen($break_sp) {
+              right: 5%;
+            }
+          }
+        }
+        // &::before {
+        // }
+        // &::after {
+        //   // font-family: $sub_font;
+        //   // font-family: $main_font;
+        //   font-size: 64px;
+        //   // font-weight: bold;
+        //   // letter-spacing: 0.207em;
+        //   // line-height: 96/64;
+        //   color: rgba(#202037,.21);
+        //   color: $main_color;
+        //   //text-align: left;
+        //   content: "”";
+        //   // transform: rotateX(180deg);
+        //   position: absolute;
+        //   // top:15px;
+        //   right: -15px;
+        //   line-height: 1;
+        // }
+      }
+
+      &-list {
+        padding-left: 53px;
+        @include max-screen($break_sp) {
+          padding-left: 10px;
+        }
+      }
+
+      &-item {
+        // margin-bottom: 1em;
+        font-family: $sub_font;
+        // font-family: $main_font;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.207em;
+        line-height: 2;
+        color: #888888;
+        // color: $main_color;
+        //text-align: left;
+      }
+    }
+
+    &-ttl {
+      padding: 12px 0 12px 138px;
+      position: relative;
+      margin-bottom: 30px;
+      font-family: $sub_font;
+      // font-family: $main_font;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 0.126em;
+      line-height: 1.5;
+      color: #212138;
+
+      &::before {
+        counter-increment: number 1;
+        /* number カウンタの増加数をセット */
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        content: "#01";
+        content: "#" counter(number,decimal-leading-zero);
+        /* 表示形式を指定 */
+        color: #fff;
+        background-color: #2C334B;
+        // display: inline-block;
+        // padding: 0 8px;
+        padding: 20px 15px;
+        // position: absolute;
+        // left: 0;
+        // font-family: $sub_font;
+        font-family: $main_font;
+        // font-size: 20px;
+        font-size: 100%;
+        font-weight: bold;
+        line-height: 1.35;
+        letter-spacing: 0.126em;
+        // color: $txt_color;
+        color: $main_color;
+        //text-align: left;
+        @include max-screen($break_sp) {
+          font-size: 20px;
+          // letter-spacing: 0.126em;
+          //text-align: left;
+          // color: $txt_color;
+        }
+        @include min-screen($break_pc) {
+          font-size: 20px;
+        }
+      }
+    }
+
+    &-txt {
+      margin-bottom: 1em;
+      font-family: $sub_font;
+      // font-family: $main_font;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0.207em;
+      line-height: 1.71;
+      color: #888888;
+      // color: $main_color;
+      //text-align: left;
+    }
+  }
+}

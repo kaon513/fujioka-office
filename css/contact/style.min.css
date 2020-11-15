@@ -795,3 +795,71 @@ a {
     height: 165px;
     background-color: #202037;
     margin-top: 101px; }
+
+.contact {
+  padding: 220px; }
+  @media screen and (max-width: 840px) {
+    .contact {
+      padding: 10%;
+      padding-top: 15.7%; } }
+  .contact-wrapper {
+    max-width: 1004px;
+    margin: 0 auto; }
+  .contact-ttl {
+    font-family: "Avenir Next", Verdana, "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+    font-size: 60px;
+    font-size: calc(3.2rem + ((1vw - 0.64rem) * 4.375));
+    letter-spacing: 0.04em;
+    line-height: 1.2;
+    color: #FEE757; }
+    @media screen and (max-width: 840px) {
+      .contact-ttl {
+        font-size: 32px; } }
+    @media screen and (min-width: 1280px) {
+      .contact-ttl {
+        font-size: 60px; } }
+    @media screen and (max-width: 840px) {
+      .contact-ttl {
+        font-size: 32px; } }
+    @media screen and (min-width: 1280px) {
+      .contact-ttl {
+        font-size: 60px; } }
+  .contact-txt {
+    font-family: "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.126em;
+    line-height: 1.3125;
+    color: #5B5C5C;
+    text-align: center;
+    margin-bottom: 22.4%; }
+    @media screen and (max-width: 840px) {
+      .contact-txt {
+        font-size: 20px;
+        margin-bottom: 5%; } }
+  .contact input,
+  .contact textarea {
+    display: block;
+    margin-bottom: 9.76%;
+    padding: 1em;
+    width: 100%; }
+    @media screen and (max-width: 840px) {
+      .contact input,
+      .contact textarea {
+        padding: .5em; } }
+  .contact input {
+    border-bottom: 1px solid #ADADAD;
+    padding-top: 2em;
+    padding-bottom: 2em; }
+    @media screen and (max-width: 840px) {
+      .contact input {
+        padding-top: .5em;
+        padding-bottom: .5em; } }
+  .contact textarea {
+    border: 1px solid #ADADAD;
+    width: 100%; }
+  .contact-btn {
+    background-color: #FECF07;
+    border-radius: 80px;
+    width: 100%;
+    padding: 15px 0; }

@@ -1,0 +1,11 @@
+//compileNested: ../../../css/page/$1.min.css
+@import "../../style";
+@import "page";
+
+.header{
+  background-color: #FAFAFA;
+}
+
+.blog-cap{
+  display: none;
+}

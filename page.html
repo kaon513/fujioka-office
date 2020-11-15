@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>藤岡行政書士事務所 | page</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/page/style.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrIoACZ5NO7m47qyDQ5L6zM3Fsw6ZaYIc&callback=initMap"></script>
+  <script>
+    function initMap() {
+      var mapPosition = new google.maps.LatLng(35.7269899, 139.7105853); //緯度経度
+      var map = new google.maps.Map(document.getElementById('gmap'), {
+        zoom: 17, //ズーム
+        center: mapPosition
+      });
+      // var marker = new google.maps.Marker({
+      // position: mapPosition,
+      // map: map
+      // });
+
+      //地図上にマーカーを配置する
+      var marker = new google.maps.Marker({
+        icon: new google.maps.MarkerImage(
+          'img/map_icon.svg', //画像ファイルのパス
+          new google.maps.Size(170, 192), //アイコンの表示サイズ(縦,横)
+          new google.maps.Point(0, 0)
+        ),
+        position: mapPosition,
+        map: map
+      });
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body>
+
+  <!-- header -->
+  <header class="header">
+
+    <!-- container -->
+    <div class="container">
+
+      <div class="header-inner">
+        <figure class="header-logo">
+          <a href="index.html"><img src="img/typo.png" alt="typo"></a>
+        </figure>
+
+        <!-- gnav -->
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="#about">About</a></li>
+            <li class="gnav-item"><a href="#service">Service</a></li>
+            <li class="gnav-item"><a href="#price">Price</a></li>
+            <li class="gnav-item"><a href="#page">page</a></li>
+            <li class="gnav-item"><a href="#contact">Contact</a></li>
+          </ul>
+
+        </nav><!-- /gnav -->
+      </div>
+
+    </div><!-- /container -->
+  </header><!-- /header -->
+
+  <!-- main -->
+  <main class="main">
+
+    <!-- page -->
+    <section class="page" id="page">
+
+      <!-- container -->
+      <div class="container">
+
+        <div class="page-content">
+          <time class="page-time">2019/11/11</time>
+          <h2 class="page-ttl">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h2>
+          <figure class="page-capture">
+            <img src="img/page_capture.png" alt="page_capture">
+          </figure>
+          <p class="page-txt">テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。</p>
+
+          <h3 class="page-middlettl">タイトル中見出し</h3>
+          <p class="page-txt">テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。</p>
+          <p class="page-txt">ストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテ</p>
+
+          <h4 class="page-subttl">タイトル小見出し</h4>
+          <p class="page-txt">
+            テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。テキストですダミーテキストです。
+          </p>
+          <figure class="page-img">
+            <img src="img/page_1.png" alt="page_1">
+          </figure>
+        </div>
+
+      </div><!-- /container -->
+
+      <div class="page-footer">
+
+        <!-- container -->
+        <div class="container">
+          <div class="page-share">
+            <figure class="page-share-img">
+              <img src="img/page_share.png" alt="page_share.png">
+            </figure>
+            <ul class="page-share-list">
+              <li class="page-share-item"><a href="#">Facebookでシェアする</a> </li>
+              <li class="page-share-item"><a href="#">Twitterでこの記事をつぶやく</a></li>
+            </ul>
+          </div>
+          <div class="page-recent">
+            <p class="page-recent-ttl">最近の記事</p>
+            <ul class="blog-list">
+              <li class="blog-item">
+                <figure class="blog-img">
+                  <img src="img/blog_1.png" alt="blog_1">
+                  <figcaption class="blog-cap">法律相談</figcaption>
+                </figure>
+                <time class="blog-item-time">2019/11/11</time>
+                <p class="blog-item-ttl">タイトルタイトル</p>
+                <p class="blog-item-txt">簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な</p>
+              </li>
+              <li class="blog-item">
+                <figure class="blog-img">
+                  <img src="img/blog_1.png" alt="blog_1">
+                  <figcaption class="blog-cap">お知らせ</figcaption>
+                </figure>
+                <time class="blog-item-time">2019/11/11</time>
+                <p class="blog-item-ttl">タイトルタイトル</p>
+                <p class="blog-item-txt">簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な</p>
+              </li>
+              <li class="blog-item">
+                <figure class="blog-img">
+                  <img src="img/blog_1.png" alt="blog_1">
+                  <figcaption class="blog-cap">豆知識</figcaption>
+                </figure>
+                <time class="blog-item-time">2019/11/11</time>
+                <p class="blog-item-ttl">タイトルタイトル</p>
+                <p class="blog-item-txt">簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- /container -->
+    </section><!-- /page -->
+
+  </main><!-- /main -->
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-txt">まずはメールで<span>お気軽にお問い合わせください</span> </p>
+      <div class="btn-large-wrapper">
+        <a href="contact.html" class="btn-large">CONTACT</a>
+      </div>
+      <div class="footer-bottom">
+
+      </div>
+    </div>
+  </footer><!-- /footer -->
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

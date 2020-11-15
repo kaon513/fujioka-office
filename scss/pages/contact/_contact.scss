@@ -1,0 +1,78 @@
+.contact {
+  // position: relative;
+  // padding: 173px 0 122px;
+  padding: 220px;
+
+  @include max-screen($break_sp) {
+    // padding-top: 59px;
+      padding: 10%;
+    padding-top: 15.7%;
+  }
+  // @include padding-size_calc(2rem, 13.8rem, 20px, 138px);
+  // background-color: #2A84AC;
+
+  &-wrapper {
+    max-width: 1004px;
+    margin: 0 auto;
+  }
+
+  &-ttl {
+    @include ttl;
+  }
+
+  &-txt {
+    font-family: $sub_font;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.126em;
+    line-height: 1.3125;
+    color: #5B5C5C;
+    text-align: center;
+    margin-bottom: 22.4%;
+
+    @include max-screen($break_sp) {
+        font-size: 20px;
+          margin-bottom: 5%;
+    }
+  }
+
+  input,
+  textarea {
+    // background-color: #fff;
+    display: block;
+    // margin-bottom: 98px;
+    margin-bottom: 9.76%;
+    padding: 1em;
+    width: 100%;
+    @include max-screen($break_sp)
+    {
+      padding: .5em;
+          // margin-bottom: 2%;
+    }
+  }
+
+  input {
+    border-bottom: 1px solid #ADADAD;
+    // width: 670px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    @include max-screen($break_sp)
+    {
+      padding-top:.5em;
+      padding-bottom: .5em;
+    }
+  }
+
+  textarea {
+    border: 1px solid #ADADAD;
+    width: 100%;
+  }
+
+  &-btn {
+    background-color: #FECF07;
+    border-radius: 80px;
+    width: 100%;
+    padding: 15px 0;
+  }
+}

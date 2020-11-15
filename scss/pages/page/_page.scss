@@ -1,0 +1,146 @@
+.page {
+
+  &-content {
+    padding: 0 17%;
+    // margin: 81px auto 147px;
+    margin: 7.3% auto 13.3%;
+    @include max-screen($break_sp) {
+      padding: 0 ;
+    }
+    @include min-screen($break_pc) {
+      padding: 0 191px;
+    }
+  }
+
+  &-time {
+    font-family: $sub_font;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 1.5;
+    color: $txt_color;
+  }
+
+  &-capture {
+    // margin-bottom: 60px;
+      margin-bottom: 2em;
+  }
+
+  &-ttl {
+    font-family: $sub_font;
+    // font-family: $main_font;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.126em;
+    line-height: 1.31;
+    color: #5B5C5C;
+    // margin: 13px 0;
+    @include max-screen($break_sp) {
+      font-size: 20px;
+      letter-spacing: 0;
+      line-height: 1.5;
+      // margin:6% 0;
+    }
+  }
+
+  &-middlettl {
+    @extend .page-ttl;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    // padding: 23.5px 0;
+    padding: 2.13% 0;
+    // margin: 55.5px 0;
+    margin: 5.04% 0;
+
+  }
+
+  &-subttl {
+    @extend .page-ttl;
+    font-size: 20px;
+    line-height: 1.2;
+    background-color: #F2F2F2;
+    // padding: 10px 23px 15px;
+    // margin: 52px 0 23px;
+    padding: 10px 23px 15px;
+    margin: 5.04% 0 2.13%;
+  }
+
+  &-txt {
+    font-family: $sub_font;
+    // font-family: $main_font;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.5;
+    color: #343434;
+    //text-align: left;
+    margin-bottom: 20px;
+    @include max-screen($break_sp) {
+      font-size: 12px;
+      line-height: 2;
+    }
+  }
+
+  &-img {
+    // margin: 72px 154px;
+    margin: 6.5% 14%;
+  }
+
+  &-footer {
+    background-color: #F2F2F2;
+    padding: 8.125% 0 7%;
+
+    @include min-screen($break_pc){
+        padding: 104px 0 90px;
+    }
+  }
+
+  &-share {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // align-items: center;
+    margin-bottom: 9.3%;
+
+    &-img {
+      width: 28.5%;
+
+      @include max-screen($break_sp) {
+        display: none;
+      }
+    }
+
+    &-list {
+      background-color: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-item {
+      flex: 1;
+      padding: 6.25% 92px;
+      border: 1px solid #D0D0D0;
+      text-align: center;
+
+      @include max-screen($break_sp) {
+          padding: 6.25% 30px;
+      }
+
+      a {
+        color: #343434;
+        @extend .page-txt;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &-recent {
+    &-ttl {
+      @extend .page-ttl;
+      font-size: 20px;
+      line-height: 1.2;
+        color: #343434;
+      margin-bottom: 38px;
+    }
+  }
+}

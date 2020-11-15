@@ -795,3 +795,111 @@ a {
     height: 165px;
     background-color: #202037;
     margin-top: 101px; }
+
+.page-content {
+  padding: 0 17%;
+  margin: 7.3% auto 13.3%; }
+  @media screen and (max-width: 840px) {
+    .page-content {
+      padding: 0; } }
+  @media screen and (min-width: 1280px) {
+    .page-content {
+      padding: 0 191px; } }
+
+.page-time {
+  font-family: "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 1.5;
+  color: #A4ABB0; }
+
+.page-capture {
+  margin-bottom: 2em; }
+
+.page-ttl, .page-middlettl, .page-subttl, .page-recent-ttl {
+  font-family: "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.126em;
+  line-height: 1.31;
+  color: #5B5C5C; }
+  @media screen and (max-width: 840px) {
+    .page-ttl, .page-middlettl, .page-subttl, .page-recent-ttl {
+      font-size: 20px;
+      letter-spacing: 0;
+      line-height: 1.5; } }
+
+.page-middlettl {
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+  padding: 2.13% 0;
+  margin: 5.04% 0; }
+
+.page-subttl {
+  font-size: 20px;
+  line-height: 1.2;
+  background-color: #F2F2F2;
+  padding: 10px 23px 15px;
+  margin: 5.04% 0 2.13%; }
+
+.page-txt, .page-share-item a {
+  font-family: "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
+  color: #343434;
+  margin-bottom: 20px; }
+  @media screen and (max-width: 840px) {
+    .page-txt, .page-share-item a {
+      font-size: 12px;
+      line-height: 2; } }
+
+.page-img {
+  margin: 6.5% 14%; }
+
+.page-footer {
+  background-color: #F2F2F2;
+  padding: 8.125% 0 7%; }
+  @media screen and (min-width: 1280px) {
+    .page-footer {
+      padding: 104px 0 90px; } }
+
+.page-share {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 9.3%; }
+  .page-share-img {
+    width: 28.5%; }
+    @media screen and (max-width: 840px) {
+      .page-share-img {
+        display: none; } }
+  .page-share-list {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column; }
+  .page-share-item {
+    flex: 1;
+    padding: 6.25% 92px;
+    border: 1px solid #D0D0D0;
+    text-align: center; }
+    @media screen and (max-width: 840px) {
+      .page-share-item {
+        padding: 6.25% 30px; } }
+    .page-share-item a {
+      color: #343434;
+      font-weight: bold; }
+
+.page-recent-ttl {
+  font-size: 20px;
+  line-height: 1.2;
+  color: #343434;
+  margin-bottom: 38px; }
+
+.header {
+  background-color: #FAFAFA; }
+
+.blog-cap {
+  display: none; }

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>藤岡行政書士事務所 | price</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/price/style.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrIoACZ5NO7m47qyDQ5L6zM3Fsw6ZaYIc&callback=initMap"></script>
+  <script>
+    function initMap() {
+      var mapPosition = new google.maps.LatLng(35.7269899, 139.7105853); //緯度経度
+      var map = new google.maps.Map(document.getElementById('gmap'), {
+        zoom: 17, //ズーム
+        center: mapPosition
+      });
+      // var marker = new google.maps.Marker({
+      // position: mapPosition,
+      // map: map
+      // });
+
+      //地図上にマーカーを配置する
+      var marker = new google.maps.Marker({
+        icon: new google.maps.MarkerImage(
+          'img/map_icon.svg', //画像ファイルのパス
+          new google.maps.Size(170, 192), //アイコンの表示サイズ(縦,横)
+          new google.maps.Point(0, 0)
+        ),
+        position: mapPosition,
+        map: map
+      });
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body>
+
+  <!-- header -->
+  <header class="header">
+
+    <!-- container -->
+    <div class="container">
+
+      <div class="header-inner">
+        <figure class="header-logo">
+          <a href="index.html"><img src="img/typo.png" alt="typo"></a>
+        </figure>
+
+        <!-- gnav -->
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="#about">About</a></li>
+            <li class="gnav-item"><a href="#service">Service</a></li>
+            <li class="gnav-item"><a href="#price">Price</a></li>
+            <li class="gnav-item"><a href="#blog">Blog</a></li>
+            <li class="gnav-item"><a href="#contact">Contact</a></li>
+          </ul>
+
+        </nav><!-- /gnav -->
+      </div>
+
+    </div><!-- /container -->
+  </header><!-- /header -->
+
+  <!-- main -->
+  <main class="main">
+
+    <!-- title -->
+    <section class="title">
+      <div class="title-ttl-wrapper">
+        <h1 class="title-ttl">Price</h1>
+      </div>
+    </section><!-- /title -->
+
+    <!-- tnav -->
+    <section class="tnav">
+      <ul class="tnav-list">
+        <li class="tnav-item"><a href="#it_homu">IT法務</a></li>
+        <li class="tnav-item"><a href="#visa">ビザ申請業務</a></li>
+        <li class="tnav-item"><a href="#minpaku">民泊申請</a></li>
+      </ul>
+    </section><!-- /tnav -->
+
+    <!-- price -->
+    <section class="price">
+      <div class="price-content" id="it_homu">
+        <h3 class="price-ttl">IT法務</h3>
+        <dl class="price-dl">
+          <dt>IT法務顧問</dt>
+          <dd>IT法務顧問など継続的にリーガルチェック、法務サポートを行います。</dd>
+          <dd>
+            <table class="price-tbl">
+              <thead>
+                <tr>
+                  <th>業務内容</th>
+                  <th>報酬額</th>
+                  <th>備考</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="gyomu"></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="gyomu"></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="gyomu"></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="gyomu"></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="gyomu"></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </dd>
+          <dt>研修</dt>
+          <dd>企業研修を実施いたします。教育内容などご相談に応じます。</dd>
+        </dl>
+      </div>
+      <div class="price-content" id="visa">
+        <h3 class="price-ttl">ビザ申請業務</h3>
+        <dl class="price-dl">
+          <dd>IT法務顧問継続的にリーガルチェック、法務サポートを行います。</dd>
+          <dd>
+            <table class="price-tbl alternately">
+              <thead>
+                <tr>
+                  <th>業務内容</th>
+                  <th>報酬額</th>
+                  <th>備考</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </dd>
+        </dl>
+      </div>
+      <div class="price-content" id="minpaku">
+        <h3 class="price-ttl">民泊業務</h3>
+        <dl class="price-dl">
+          <dt>住宅宿泊事業届等の申請</dt>
+          <dd>色々なご提案ができます。直接当社までお問い合わせください直接お問い合わせください</dd>
+                </dl>
+      </div>
+    </section><!-- /price -->
+
+  </main><!-- /main -->
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-txt">まずはメールで<span>お気軽にお問い合わせください</span> </p>
+      <div class="btn-large-wrapper">
+        <a href="contact.html" class="btn-large">CONTACT</a>
+      </div>
+      <div class="footer-bottom">
+
+      </div>
+    </div>
+  </footer><!-- /footer -->
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

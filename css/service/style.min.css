@@ -777,10 +777,7 @@ a {
 
 .footer {
   text-align: center;
-  padding-top: 12%; }
-  @media screen and (min-width: 1280px) {
-    .footer {
-      padding-top: 158px; } }
+  padding-top: 158px; }
   .footer-txt {
     font-family: "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
     font-size: 20px;
@@ -795,3 +792,117 @@ a {
     height: 165px;
     background-color: #202037;
     margin-top: 101px; }
+
+.service {
+  border: 15px solid #F2F2F2;
+  counter-reset: number 0;
+  margin: 0 auto; }
+  @media screen and (max-width: 840px) {
+    .service {
+      border: 3px solid #F2F2F2; } }
+  .service-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10.5%; }
+    .service-card:last-child {
+      margin-bottom: 10.5%; }
+    .service-card-left {
+      width: 48.01802%; }
+      @media screen and (max-width: 840px) {
+        .service-card-left {
+          width: 100%; } }
+    .service-card-right {
+      width: 42.97297%;
+      background-color: #FAFAFA;
+      padding-top: 62px;
+      margin: 0 auto; }
+      @media screen and (max-width: 840px) {
+        .service-card-right {
+          width: 100%;
+          padding-top: 13%; } }
+      .service-card-right-ttl {
+        font-family: "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.207em;
+        line-height: 1.5;
+        color: #202037;
+        text-align: center;
+        vertical-align: middle;
+        position: relative;
+        margin-bottom: 55px; }
+        .service-card-right-ttl span {
+          font-size: 64px;
+          color: rgba(32, 32, 55, 0.21);
+          color: #F0F0F0;
+          line-height: 1;
+          position: absolute; }
+          @media screen and (max-width: 840px) {
+            .service-card-right-ttl span {
+              font-size: 32px; } }
+          .service-card-right-ttl span:nth-child(1) {
+            left: 10%; }
+            @media screen and (max-width: 840px) {
+              .service-card-right-ttl span:nth-child(1) {
+                left: 5%; } }
+          .service-card-right-ttl span:nth-child(2) {
+            right: 10%; }
+            @media screen and (max-width: 840px) {
+              .service-card-right-ttl span:nth-child(2) {
+                right: 5%; } }
+      .service-card-right-list {
+        padding-left: 53px; }
+        @media screen and (max-width: 840px) {
+          .service-card-right-list {
+            padding-left: 10px; } }
+      .service-card-right-item {
+        font-family: "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.207em;
+        line-height: 2;
+        color: #888888; }
+    .service-card-ttl {
+      padding: 12px 0 12px 138px;
+      position: relative;
+      margin-bottom: 30px;
+      font-family: "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 0.126em;
+      line-height: 1.5;
+      color: #212138; }
+      .service-card-ttl::before {
+        counter-increment: number 1;
+        /* number カウンタの増加数をセット */
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        content: "#01";
+        content: "#" counter(number, decimal-leading-zero);
+        /* 表示形式を指定 */
+        color: #fff;
+        background-color: #2C334B;
+        padding: 20px 15px;
+        font-family: "Avenir Next", Verdana, "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+        font-size: 100%;
+        font-weight: bold;
+        line-height: 1.35;
+        letter-spacing: 0.126em;
+        color: #F0F0F0; }
+        @media screen and (max-width: 840px) {
+          .service-card-ttl::before {
+            font-size: 20px; } }
+        @media screen and (min-width: 1280px) {
+          .service-card-ttl::before {
+            font-size: 20px; } }
+    .service-card-txt {
+      margin-bottom: 1em;
+      font-family: "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0.207em;
+      line-height: 1.71;
+      color: #888888; }

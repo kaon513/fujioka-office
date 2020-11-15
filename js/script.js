@@ -144,7 +144,12 @@ $(function() {
   //
   // });
 
+  $('.slick01').slick({ //{}を入れる
+    autoplay: true, //「オプション名: 値」の形式で書く
+    autoplaySpeed: 2000, // 自動再生のスピード（ミリ秒単位）
+    arrows: false,
 
+  });
 
 
 });

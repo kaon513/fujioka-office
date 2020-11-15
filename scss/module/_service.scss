@@ -1,18 +1,49 @@
 .service {
   margin-top: 8.5%;
-
-  @include min-screen($break_pc){
-      margin-top: 109px;
+  @include max-screen($break_sp) {
+    margin-top: 20%;
+  }
+  @include min-screen($break_pc) {
+    margin-top: 109px;
   }
 
-  &-list{
+  &-ttl{
+    @include hedaer_ttl();
+  }
+
+  &-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content: space-between;
   }
-&-item{
-  width: 30%;
-}
+
+  &-item {
+    width: 30%;
+
+    @include max-screen($break_sp) {
+      width: 100%;
+    }
+
+    &-txt{
+      margin: 26px auto;
+      font-family: $sub_font;
+      // font-family: $main_font;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.5;
+      letter-spacing: 0.126em;
+      //text-align: left;
+      color: $txt_color;
+
+      @include max-screen($break_sp) {
+        font-size: 14px;
+        line-height: 1.71;
+        // letter-spacing: 0.126em;
+        //text-align: left;
+        // color: $txt_color;
+      }
+    }
+  }
 
   &-cap {
     display: flex;
@@ -30,12 +61,52 @@
       padding: 0 8px;
       // position: absolute;
       // left: 0;
+      // font-family: $sub_font;
+      font-family: $main_font;
+      // font-size: 20px;
+      font-size: 100%;
+      font-weight: bold;
+      line-height: 1.35;
+      letter-spacing: 0.126em;
+      // color: $txt_color;
+      color: $main_color;
+      //text-align: left;
+
+      @include max-screen($break_sp) {
+        font-size: 20px;
+        // letter-spacing: 0.126em;
+        //text-align: left;
+        // color: $txt_color;
+      }
+      @include min-screen($break_pc){
+           font-size: 20px;
+      }
+
     }
 
-    &-ttl{
+    &-ttl {
       // display: inline-block;
       text-align: center;
       margin: 0 auto;
+      font-family: $sub_font;
+      // font-family: $main_font;
+      // font-size: 24px;
+      font-size: 110%;
+      font-weight: bold;
+      line-height: 1.38;
+      letter-spacing: 0.126em;
+      color: #212138;
+      //text-align: left;
+      @include max-screen($break_sp) {
+        font-size: 24px;
+        line-height: 1.5;
+        // letter-spacing: 0.126em;
+        //text-align: left;
+        // color: $txt_color;
+      }
+      @include min-screen($break_pc){
+           font-size: 24px;
+      }
     }
   }
 }

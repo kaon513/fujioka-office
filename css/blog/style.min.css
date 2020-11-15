@@ -795,3 +795,29 @@ a {
     height: 165px;
     background-color: #202037;
     margin-top: 101px; }
+
+.page {
+  text-align: center;
+  margin-top: 5.2%; }
+  @media screen and (min-width: 1280px) {
+    .page {
+      margin-top: 67px; } }
+  .page-numbers {
+    border: 1px solid #707070;
+    padding: 12px;
+    margin-right: 13px;
+    font-family: "Avenir Next", Verdana, "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 1.5;
+    color: #1D1D1D; }
+    @media screen and (max-width: 840px) {
+      .page-numbers {
+        font-size: 10px;
+        padding: 10px;
+        margin-right: 10px; } }
+
+@media screen and (max-width: 840px) {
+  .blog {
+    margin-top: 10%; } }

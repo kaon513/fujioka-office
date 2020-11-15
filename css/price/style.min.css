@@ -795,3 +795,114 @@ a {
     height: 165px;
     background-color: #202037;
     margin-top: 101px; }
+
+.tnav {
+  border-bottom: 1px solid #202037;
+  padding: 21px 0;
+  font-family: "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.126em;
+  color: #212138; }
+  .tnav-list {
+    display: flex;
+    justify-content: space-around; }
+  .tnav-item {
+    font-size: 24px;
+    line-height: 1.5; }
+    @media screen and (max-width: 840px) {
+      .tnav-item {
+        font-size: 20px; } }
+    .tnav-item a {
+      color: #212138; }
+      .tnav-item a::after {
+        content: "";
+        display: block;
+        background-image: url("../../img/arrow.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 21px;
+        height: 14px;
+        margin: 0 auto;
+        cursor: pointer; }
+
+.price {
+  counter-reset: number 0;
+  max-width: 1280px;
+  padding: 0 2.4%;
+  margin: 0 auto;
+  font-family: "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.126em;
+  line-height: 2;
+  color: #212138; }
+  @media screen and (min-width: 1280px) {
+    .price {
+      padding: 0 31px; } }
+  .price-content {
+    margin-top: 8.8%; }
+    .price-content:last-child {
+      margin-bottom: 20%; }
+  .price-ttl {
+    padding: 12px 0 12px 138px;
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 1.5; }
+    .price-ttl::before {
+      font-family: "Avenir Next", Verdana, "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+      font-size: 24px;
+      line-height: 1.333;
+      counter-increment: number 1;
+      /* number カウンタの増加数をセット */
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      content: "#" counter(number, decimal-leading-zero);
+      /* 表示形式を指定 */
+      color: #fff;
+      background-color: #2C334B;
+      padding: 20px 15px;
+      font-family: "Avenir Next", Verdana, "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+      font-size: 100%;
+      font-weight: bold;
+      line-height: 1.35;
+      letter-spacing: 0.126em;
+      color: #F0F0F0; }
+      @media screen and (max-width: 840px) {
+        .price-ttl::before {
+          font-size: 20px; } }
+      @media screen and (min-width: 1280px) {
+        .price-ttl::before {
+          font-size: 20px; } }
+  .price-dl dt {
+    font-size: 20px;
+    line-height: 1.5; }
+  .price-tbl {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed; }
+    .price-tbl .gyomu {
+      background-color: #F2F2F2; }
+    .price-tbl thead td,
+    .price-tbl thead th {
+      border: none; }
+    .price-tbl tbody {
+      border-top: 9px solid #202037; }
+    .price-tbl tr {
+      height: 43px;
+      border-bottom: solid 1px #202037; }
+    .price-tbl th {
+      padding: 7px 0;
+      border-right: solid 1px #202037;
+      border-left: solid 1px #202037; }
+    .price-tbl td {
+      text-align: center;
+      padding: 7px 0;
+      border-right: solid 1px #202037;
+      border-left: solid 1px #202037; }
+
+.alternately tr:nth-child(even) td {
+  background: #F2F2F2; }
